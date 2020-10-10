@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <title>Fornisci nuove autorizzazioni</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700"/>
+    <link rel="stylesheet" href="../css/showPermissions.css">
+</head>
+<body style="background-color: rgb(207,211,248)">
+<h1 class="display-4">Trova gli address che dispongono delle autorizzazioni inserite</h1>
+<div class="main">
+    <h4>Seleziona i permessi</h4>
+    <div class="checkBoxes">
+        <input type="checkbox" name="permessi" id="connect">connect
+        <input type="checkbox" name="permessi" id="send">send
+        <input type="checkbox" name="permessi" id="receive">receive
+        <input type="checkbox" name="permessi" id="create">create
+        <input type="checkbox" name="permessi" id="issue">issue
+        <input type="checkbox" name="permessi" id="mine">mine
+        <input type="checkbox" name="permessi" id="activate">activate
+        <input type="checkbox" name="permessi" id="admin">admin
+    </div>
+    <button class="btn btn-secondary" type="button" id="grant" onclick="showPermissions();">Ricerca</button>
+    <div class="container">
+        <h5 id="innerTitle" style="display: none">Nodi che soddisfano i permessi inseriti</h5>
+    </div>
+</div>
+<br>
+<hr id="divisore">
+<br>
+<br>
+<button class="btn btn-secondary btn-md text-center" type="button"
+        onclick="location.href=__dirname+'/blockchainInfo.html'" id="indietro">Indietro
+</button>
+<script src="../js/showPermissions.js"></script>
+</body>
+
+</html>
+</body>
+</html>

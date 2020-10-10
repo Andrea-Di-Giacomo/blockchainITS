@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Crea Blockchain</title>
+    <script src="../js/creaBlockchain_p.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+<body style="background-color: rgb(207,211,248);">
+<h1 class="display-4 border rounded-0 border-secondary">Inserisci i parametri per personalizzare la tua Blockchain</h1>
+<div class="container" style="margin-top: 3%;">
+    <h2>Parametri generali</h2>
+    <form id="creaBlockchain" onsubmit="exec()">
+        <h4>Inserisci il nome della Blockchain</h4>
+        <input class="form-control" type="text" id="nome_BC" autocomplete="off" required="" style="width: 70%;">
+        <h4>Inserisci una descrizione della Blockchain (facoltativo)</h4><input class="form-control" type="text" id="descrizione" style="width: 70%;">
+        <h4>Tempo che intercorre tra la creazione di due blocchi (default 15 secondi)</h4>
+        <input class="form-control" type="text" id="tempo_blocchi" autocomplete="off" required style="width: 70%;"                                                                                                 value="15">
+        <h4>Massima dimensione(in byte) dei blocchi (default 8388608 Bytes = 8MB)<br></h4>
+        <input class="form-control" type="text" id="dimensione_blocchi" autocomplete="off" required style="width: 70%;" value="8388608">
+        <h2>Permessi (Di default sono tutti impostati su No)</h2>
+        <h4>Chiunque può connettersi<br></h4>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" required name="permessi_connessione" value="true">Si
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio"  name="permessi_connessione" required
+                   value="false" checked>No
+        </div>
+        <h4>Chiunque può inviare transazioni<br></h4>
+        <div class="form-check">
+            <input class="form-check-input" type="radio"  required="" name="permessi_invio"
+                   value="true">Si
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="permessi_invio" required=""
+                   value="false" checked="">No
+        </div>
+        <h4>Chiunque può ricevere transazioni<br></h4>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" required="" name="permessi_ricezione"
+                   value="true">Si
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="permessi_ricezione" checked=""
+                   value="false" required="">No
+        </div>
+        <h4>Chiunque può creare streams<br>
+        </h4>
+        <div class="form-check">
+        <input class="form-check-input" type="radio" required name="permessi_stream" value="true">Si
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="permessi_stream" checked="" required="" value="false">No
+        </div>
+        <h4>Chiunque può creare assets<br>
+        </h4>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" required="" name="permessi_asset"
+                   value="true">Si
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="permessi_asset" checked=""
+                   required="" value="false">No
+
+        </div>
+        <h4>Chiunque può essere un miner di blocchi<br></h4>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" required="" name="permessi_mining"
+                   value="true">Si
+
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio"  name="permessi_mining" checked=""
+                   required="" value="false">No
+        </div>
+        <div class="row" style="margin-top: 2%;margin-bottom: 2%">
+            <div class="col">
+                <button class="btn btn-info btn-lg text-center" type="button" onclick="location.href=__dirname+'/../../index.html'">Indietro</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-info btn-lg text-center" type="submit">Crea la Blockchain</button>
+            </div>
+        </div>
+
+
+    </form>
+</div>
+</body>
+
+</html>

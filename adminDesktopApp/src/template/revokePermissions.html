@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <title>Rimuovi autorizzazioni</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700"/>
+    <link rel="stylesheet" href="../css/revokePermissions.css">
+</head>
+<body style="background-color: rgb(207,211,248)" onload="loadData()">
+<h1 class="display-4">Rimuovi le autorizzazioni a un nodo inserendo l'address</h1>
+<div class="main">
+    <h4>Seleziona il nodo</h4>
+    <span id="msg" style="display: none"></span>
+    <br>
+    <div id="dropdownDiv">
+
+    </div>
+    <div class="checkBoxes">
+
+    </div>
+    <button class="btn btn-secondary" type="button" id="grant" onclick="revokePermissions()">Rimuovi i permessi</button>
+    </form>
+</div>
+<br>
+<hr id="divisore">
+<br>
+<br>
+<button class="btn btn-secondary btn-md text-center" type="button"
+        onclick="location.href=__dirname+'/blockchainInfo.html'" id="indietro">Indietro
+</button>
+<script src="../js/revokePermissions.js"></script>
+</body>
+
+</html>

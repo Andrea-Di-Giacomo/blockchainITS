@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <title>Verifica address</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700"/>
+    <link rel="stylesheet" href="../css/checkAddress.css">
+</head>
+
+<body style="background-color: rgb(207,211,248)">
+<h1 class="display-4">Ottieni le informazioni di un address inserendone il valore o la chiave pubblica associata</h1>
+<div class="main">
+    <h4>Address</h4>
+    <input type="text" placeholder="Address" autofocus required id="search"> <span id="msg" style="display: none">L'indirizzo inserito non è valido</span>
+    <br>
+    <button class="btn btn-secondary" type="button" onclick="send()">Cerca</button>
+
+</div>
+<br>
+<div class="container">
+    <div class="risultato">
+
+    </div>
+</div>
+<hr>
+<br>
+<br>
+<button class="btn btn-secondary btn-md text-center" type="button"
+        onclick="location.href=__dirname+'/blockchainInfo.html'">Indietro
+</button>
+<script src="../js/checkAddress.js"></script>
+</body>
+
+</html>

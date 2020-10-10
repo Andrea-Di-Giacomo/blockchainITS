@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prova</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../stylesheets/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+{{>navbar}}
+<div class="container">
+    <h3>Login</h3>
+    <hr>
+    <p>Inserisci le credenziali per accedere alla piattaforma</p>
+    <div id="registrazione">
+        <form id="loginForm" action="/users/login">
+            <p>Email</p>
+            <input class="form-control" type="text" id="email" name="email" required>
+            <p>Password</p>
+            <input class="form-control" type="password" id="password" name="password" required>
+            <hr>
+            <button type="submit" class="btn btn-secondary"  id="sendBtn">Accedi</button>
+            <br>
+        </form>
+    </div>
+</div>
+
+
+<script src="/javascripts/general.js"></script>
+<script src="/javascripts/login.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

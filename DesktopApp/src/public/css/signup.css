@@ -1,0 +1,22 @@
+body{
+    color: #313437;
+    background-color: #eef4f7;
+}
+
+.navbar.navbar-expand.navbar-light.bg-custom{
+    background: #3d667a
+}
+.container{
+    margin-top: 3%;
+    background-color: #ffffff;
+    width: 40%;
+    padding:2%;
+    border-radius:1%
+}
+#tipoUtente{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#datiUtente{
+
+}

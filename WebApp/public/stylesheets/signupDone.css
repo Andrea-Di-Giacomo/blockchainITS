@@ -1,0 +1,20 @@
+.bg-custom{
+    background: #252525;
+    color: white;
+
+}
+.nav-link{
+    color: white;
+}
+.justify-content-end .nav-link{
+    color: #9ed0ff
+}
+
+.container{
+    margin-top: 3%;
+    border-radius:1%
+}
+body{
+    color: #313437;
+    background-color: #eef4f7;
+}

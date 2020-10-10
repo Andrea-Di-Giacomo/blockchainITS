@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <title>Untitled</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../stylesheets/annuncioVeicolo.css">
+</head>
+{{>navbar}}
+<body onload="logged('{{sessione}}');loadAnnuncio('{{targa}}')">
+<div id="info">
+    <h1 class="text-center" id="veicoloTitolo"></h1>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+        </ol>
+        <div class="carousel-inner">
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Alimentazione</h3>
+                            <p><span id="alimentazione"></span></p>
+                        </div>
+                    </div>
+                    <div class="row"></div>
+                    <h3>Potenza</h3>
+                    <p><span id="potenza"></span></p>
+                    <div class="row"></div>
+                    <h3>Chilometraggio</h3>
+                    <p><span id="chilometraggio"></span></p>
+                    <div class="row"></div>
+                    <h3>Provincia</h3>
+                    <p><span id="provincia"></span></p>
+                    <div class="row"></div>
+                    <h3>Recapito telefonico</h3>
+                    <p><span id="telefono"></span></p>
+                    <div class="row"></div>
+                    <h3>Numero di proprietari</h3>
+                    <p><span id="numProp"></span></p>
+                    <h3>Prezzo</h3>
+                    <p><span id="prezzo"></span></p>
+                </div>
+                <div class="col-md-6" id="intermezzo">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Data immatricolazione</h3>
+                            <p><span id="anno"></span></p>
+                        </div>
+                    </div>
+                    <div class="row"></div>
+                    <h3>Cambio</h3>
+                    <p><span id="cambio"></span></p>
+                    <div class="row"></div>
+                    <h3>Cilindrata</h3>
+                    <p><span id="cilindrata"></span></p>
+                    <div class="row"></div>
+                    <h3>Comune</h3>
+                    <p><span id="comune"></span></p>
+                    <div class="row"></div>
+                    <h3>Email</h3>
+                    <p><span id="email"></span></p>
+                    <div class="row"></div>
+                    <h3>Vedi le riparazioni certificate</h3>
+                    <a target="_blank" id="riparazioniLink">Clicca qui</a>
+                    <div class="row"></div>
+                </div>
+            </div>
+            <div>
+                <h3>Descrizione</h3>
+                <p><span id="descrizione"></span></p>
+            </div>
+        </div>
+
+
+</div>
+<div class="jumbotron">
+    <h1>Pagina non esistente</h1>
+    <p>Stai cercando di vedere un annuncio che non esiste o che è stato rimosso. </p>
+    <p><a class="btn btn-primary" role="button">Indietro</a></p>
+</div>
+<script src="/javascripts/general.js"></script>
+<script src="../javascripts/annuncioVeicolo.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

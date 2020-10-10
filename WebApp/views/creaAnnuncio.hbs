@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <title>Main Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../stylesheets/creaAnnuncio.css">
+</head>
+<body onload="logged('{{sessione}}');fillDropdownProvincia()">
+{{>navbar}}
+<div class="contact-clean">
+    <form method="post" id="annuncioForm">
+        <h2 class="text-center">Inserisci i dati richiesti</h2>
+        <div class="form-group">
+            <h5>Targa</h5>
+            <input class="form-control" type="text" id="targa" name="targa" required minlength="7"
+                   maxlength="7">
+            <small class="form-text text-danger" id="errore">Il veicolo non risulta possedere riparazioni certificate. Non è possibile inserire l'annuncio</small>
+        </div>
+        <div id="dati" style="display: none">
+        <div class="form-group">
+            <h5>Marca</h5>
+            <input type="text" class="form-control" id="marca" name="marca" required>
+            </select>
+        </div>
+        <div class="form-group">
+            <h5>Modello</h5>
+        <input type="text" class="form-control" id="modello" name="modello" required >
+        </div>
+        <div class="form-group">
+            <h5>Cilindrata</h5>
+            <input class="form-control " id="cilindrata" type="text" name="cilindrata" required></div>
+        <div class="form-group">
+            <h5>Cavalli</h5>
+            <input class="form-control " id="cavalli" type="text" name="cavalli" required>
+        </div>
+        <div class="form-group">
+            <select class="form-control" id="alimentazione" name="alimentazione" required >
+                <option selected value="" disabled>Alimentazione</option>
+                <option value="Benzina">Benzina</option>
+                <option value="Diesel">Diesel</option>
+                <option value="Metano">Metano</option>
+                <option value="Gpl">GPL</option>
+                <option value="Elettrica">Elettrica</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select class="form-control" id="drop" onchange="mandaProvincia()" required>
+                <option selected disabled >Provincia</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select class="form-control" id='dropComuni' name="" required>
+                <option selected disabled>Comune</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <h5>Recapito telefonico</h5>
+            <input class="form-control " id="telefono" type="number" name="telefono" required>
+        </div>
+        <div class="form-group">
+            <h5>Anno di immatricolazione</h5>
+            <input class="form-control " id="anno" type="text" name="anno" required></div>
+        <div class="form-group">
+            <h5>Prezzo</h5>
+            <input class="form-control " id="prezzo" type="number" name="prezzo" required>
+        </div>
+        <div class="form-group">
+            <h4>Chilometraggio</h4>
+            <input class="form-control " id="chilometraggio" type="text" name="chilometraggio" required></div>
+        <div class="form-group">
+            <select class="form-control" id="cambio" name="cambio" required >
+                <option selected value="" disabled>Cambio</option>
+                <option value="Automatico">Automatico</option>
+                <option value="Manuale">Manuale</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <h4>Descrizione del veicolo</h4>
+            <textarea class="form-control" id="descrizione" rows="4" cols="50" required></textarea>
+        </div>
+        <div class="form-group">
+            <h4>Inserisci una o più immagini della tua auto</h4>
+            <input id="imgs" class="form-control" type="file" multiple required>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit">Invia</button>
+        </div>
+        </div>
+    </form>
+</div>
+
+    <script src="/javascripts/general.js"></script>
+    <script src="../javascripts/creaAnnuncio.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</body>
+</html>

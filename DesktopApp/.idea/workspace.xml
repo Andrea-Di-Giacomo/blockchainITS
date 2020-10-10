@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="47bbe0e1-ed31-4878-a4f8-bbb6b5c9a209" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1RYlYfJdIu55ZVu2UktZh1rPLUU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="8.11.1" />
+    <property name="javascript.nodejs.core.library.typings.version" value="8.10.63" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../adminDesktopApp" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Andrea\Desktop\Tesi\peerDesktopApp\src\public\javascript" />
+      <recent name="C:\Users\Andrea\Desktop\Tesi\peerDesktopApp\src\public\css" />
+      <recent name="C:\Users\Andrea\Desktop\Tesi\peerDesktopApp\src\public" />
+      <recent name="C:\Users\Andrea\Desktop\Tesi\peerDesktopApp\src" />
+      <recent name="C:\Users\Andrea\Desktop\Tesi\peerDesktopApp\src\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Andrea\Desktop\TESI FINITA E PERFETTA\peerDesktopApp" />
+      <recent name="C:\Users\Andrea\Desktop\Tesi\peerDesktopApp\src\public\javascript" />
+      <recent name="C:\Users\Andrea\Desktop\Tesi\peerDesktopApp\src" />
+      <recent name="C:\Users\Andrea\Desktop\tesi_electron\porting" />
+      <recent name="C:\Users\Andrea\Desktop\tesi_electron" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.Ass1 10555 tesi">
+    <configuration name="index.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/tesi_electron/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="dump_immatricolazioni.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/public/javascript/dump_immatricolazioni.js" working-dir="$PROJECT_DIR$/src/public/javascript">
+      <method v="2" />
+    </configuration>
+    <configuration name="dump_riparazioni.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/public/javascript/dump_riparazioni.js" working-dir="$PROJECT_DIR$/src/public/javascript">
+      <method v="2" />
+    </configuration>
+    <configuration name="multichain_node_link.js" type="NodeJSConfigurationType" temporary="true" application-parameters="prova 10255 Prima" nameIsGenerated="true" path-to-js-file="multichain_node_link.js" working-dir="$PROJECT_DIR$/src">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/public/javascript/test.js" working-dir="$PROJECT_DIR$/src/public/javascript">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.js (2)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="Ass1 10555 tesi" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Conc1 10255 tesi" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <arguments value="Conc1 10255 tesi" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Conc2 10355 tesi" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <arguments value="Conc2 10355 tesi" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Mec1 10455 tesi" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <arguments value="Mec1 10455 tesi" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="Node.js.multichain_node_link.js" />
+      <item itemvalue="Node.js.dump_immatricolazioni.js" />
+      <item itemvalue="Node.js.dump_riparazioni.js" />
+      <item itemvalue="Node.js.test.js (1)" />
+      <item itemvalue="Node.js.test.js (2)" />
+      <item itemvalue="npm.Ass1 10555 tesi" />
+      <item itemvalue="npm.Mec1 10455 tesi" />
+      <item itemvalue="npm.Conc1 10255 tesi" />
+      <item itemvalue="npm.Conc2 10355 tesi" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.test.js (2)" />
+        <item itemvalue="Node.js.dump_immatricolazioni.js" />
+        <item itemvalue="Node.js.test.js (1)" />
+        <item itemvalue="Node.js.dump_riparazioni.js" />
+        <item itemvalue="Node.js.multichain_node_link.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="47bbe0e1-ed31-4878-a4f8-bbb6b5c9a209" name="Default Changelist" comment="" />
+      <created>1569515332853</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569515332853</updated>
+      <workItem from="1569515334146" duration="10851000" />
+      <workItem from="1569570007742" duration="8000" />
+      <workItem from="1569587305289" duration="4046000" />
+      <workItem from="1569591391552" duration="11526000" />
+      <workItem from="1569657522783" duration="206000" />
+      <workItem from="1569657742003" duration="459000" />
+      <workItem from="1569675909043" duration="20462000" />
+      <workItem from="1569761838472" duration="1002000" />
+      <workItem from="1569770791572" duration="5737000" />
+      <workItem from="1569829948382" duration="612000" />
+      <workItem from="1569850597887" duration="33000" />
+      <workItem from="1569850707179" duration="463000" />
+      <workItem from="1569851962267" duration="9793000" />
+      <workItem from="1569919509287" duration="193000" />
+      <workItem from="1569940850714" duration="4004000" />
+      <workItem from="1569944931308" duration="225000" />
+      <workItem from="1570020420739" duration="1263000" />
+      <workItem from="1570194636385" duration="5960000" />
+      <workItem from="1570201424220" duration="9167000" />
+      <workItem from="1570347816644" duration="6251000" />
+      <workItem from="1570370377883" duration="10100000" />
+      <workItem from="1570456827411" duration="268000" />
+      <workItem from="1570458329112" duration="43000" />
+      <workItem from="1570458384174" duration="696000" />
+      <workItem from="1570530786989" duration="50000" />
+      <workItem from="1570530866045" duration="1514000" />
+      <workItem from="1570536468884" duration="5226000" />
+      <workItem from="1570553582932" duration="2970000" />
+      <workItem from="1570615109358" duration="487000" />
+      <workItem from="1570627303731" duration="8617000" />
+      <workItem from="1570736493265" duration="163000" />
+      <workItem from="1570736765324" duration="2651000" />
+      <workItem from="1570793582866" duration="20000" />
+      <workItem from="1570958426020" duration="3730000" />
+      <workItem from="1570963980472" duration="22000" />
+      <workItem from="1570973482596" duration="920000" />
+      <workItem from="1570977738386" duration="1849000" />
+      <workItem from="1570980639106" duration="1035000" />
+      <workItem from="1570986015165" duration="262000" />
+      <workItem from="1571061505541" duration="122000" />
+      <workItem from="1571063133695" duration="1365000" />
+      <workItem from="1571068750892" duration="119000" />
+      <workItem from="1571069028858" duration="2413000" />
+      <workItem from="1571233439239" duration="1416000" />
+      <workItem from="1571236779967" duration="205000" />
+      <workItem from="1571241259983" duration="307000" />
+      <workItem from="1571241766782" duration="186000" />
+      <workItem from="1571243128744" duration="2787000" />
+      <workItem from="1571260348742" duration="5827000" />
+      <workItem from="1571309822882" duration="34000" />
+      <workItem from="1571310232690" duration="5000" />
+      <workItem from="1571314136539" duration="11527000" />
+      <workItem from="1571344148150" duration="9892000" />
+      <workItem from="1571393231529" duration="1394000" />
+      <workItem from="1571410279588" duration="1257000" />
+      <workItem from="1571430601539" duration="663000" />
+      <workItem from="1571432912748" duration="17000" />
+      <workItem from="1571496812422" duration="1666000" />
+      <workItem from="1571608457033" duration="40000" />
+      <workItem from="1571610535862" duration="271000" />
+      <workItem from="1571695020128" duration="440000" />
+      <workItem from="1571696310929" duration="321000" />
+      <workItem from="1571696756573" duration="116000" />
+      <workItem from="1571697404712" duration="407000" />
+      <workItem from="1571698554407" duration="829000" />
+      <workItem from="1571699404480" duration="1150000" />
+      <workItem from="1571736306537" duration="153000" />
+      <workItem from="1571739810754" duration="12030000" />
+      <workItem from="1571751888240" duration="19141000" />
+      <workItem from="1571780179014" duration="608000" />
+      <workItem from="1571787118663" duration="515000" />
+      <workItem from="1571826066579" duration="1820000" />
+      <workItem from="1571923911302" duration="383000" />
+      <workItem from="1572011439392" duration="28000" />
+      <workItem from="1572083196136" duration="3656000" />
+      <workItem from="1572094318277" duration="29000" />
+      <workItem from="1572094370720" duration="287000" />
+      <workItem from="1572105801915" duration="357000" />
+      <workItem from="1572106211439" duration="665000" />
+      <workItem from="1572106972173" duration="1944000" />
+      <workItem from="1572109461450" duration="70000" />
+      <workItem from="1572356476049" duration="1593000" />
+      <workItem from="1572358110499" duration="3422000" />
+      <workItem from="1572445797241" duration="6453000" />
+      <workItem from="1572467212688" duration="1477000" />
+      <workItem from="1572470729260" duration="70000" />
+      <workItem from="1572471366843" duration="606000" />
+      <workItem from="1572518333869" duration="6000" />
+      <workItem from="1599908850700" duration="5134000" />
+      <workItem from="1599921336730" duration="5005000" />
+      <workItem from="1602006237624" duration="471000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599909925081">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599909925081" />
+    <state width="1899" height="274" key="GridCell.Tab.0.bottom" timestamp="1599914366649">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599914366649" />
+    <state width="1899" height="274" key="GridCell.Tab.0.center" timestamp="1599914366649">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599914366649" />
+    <state width="1899" height="274" key="GridCell.Tab.0.left" timestamp="1599914366649">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599914366649" />
+    <state width="1899" height="274" key="GridCell.Tab.0.right" timestamp="1599914366649">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599914366649" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/main.js</url>
+          <line>31</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

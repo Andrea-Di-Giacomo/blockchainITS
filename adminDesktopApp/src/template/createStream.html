@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <title>Verifica address</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700"/>
+    <link rel="stylesheet" href="../css/createStream.css">
+</head>
+
+<body style="background-color: rgb(207,211,248)">
+<h1 class="display-4">Crea una nuova stream</h1>
+<div class="main">
+    <h4>Nome della stream</h4>
+    <input type="text" placeholder="nome della stream" autofocus required id="nomeStream">
+    <span id="msg" style="display: none">Il nome della stream è gia in uso.</span>
+    <br>
+    <button class="btn btn-secondary" type="button" onclick="send()" id="crea">Crea</button>
+
+</div>
+<br>
+<hr id="divisore">
+<br>
+<br>
+<button class="btn btn-secondary btn-md text-center" type="button"
+        onclick="location.href=__dirname+'/blockchainInfo.html'" id="indietro">Indietro
+</button>
+<script src="../js/createStream.js"></script>
+</body>
+
+</html>

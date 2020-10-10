@@ -1,0 +1,13 @@
+body{
+    background: #5b9eb6;
+}
+.container{
+    margin-top: 10%;
+    width: 40%;
+    padding:2%;
+    border-radius:1%
+}
+#car{
+    height: 300px;
+    width: 400px;
+}

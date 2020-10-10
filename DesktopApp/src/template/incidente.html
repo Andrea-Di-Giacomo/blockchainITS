@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Inserisci incidenti</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../public/css/riparazione.css">
+</head>
+<body onload="loadMarche()">
+<h1>Inserisci i dettagli di un incidente</h1>
+<form  id="assForm">
+    <div id="container">
+        <div class="row">
+            <div class="col lg-2">
+                <label for="targa">Targa</label>
+            </div>
+            <div class="col lg-4">
+                <input type="text" class="form-control form-group" id="targa" name="targa" required minlength="7" maxlength="7">
+            </div>
+            <div class="col lg-4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col lg-2">
+                <label for="telaio">N° Telaio</label>
+            </div>
+            <div class="col lg-4">
+                <input type="text" class="form-control form-group" id="telaio" name="telaio" required minlength="17" maxlength="17">
+            </div>
+            <div class="col lg-4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col lg-2">
+                <label for="proprietario">Proprietario</label>
+            </div>
+            <div class="col lg-4">
+                <input type="text" class="form-control form-group" id="proprietario" name="proprietario" required>
+            </div>
+            <div class="col lg-4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col lg-2">
+                <label for="marca">Marca auto</label>
+            </div>
+            <div class="col lg-2">
+                <select id="marca" name="marca" class="form-control form-group" required onchange="loadModelsByMakers()">
+                    <option selected value="" disabled>Marca</option>
+                </select>
+            </div>
+            <div class="col lg-4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col lg-2">
+                <label for="modello">Modello auto</label>
+            </div>
+            <div class="col lg-4">
+                <select id="modello" class="form-control form-group" name="modello" required >
+                    <option selected value="" disabled>Modello</option>
+                </select>
+            </div>
+            <div class="col lg-4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col lg-2">
+                <label for="indennizzo">Indennizzo in €</label>
+            </div>
+            <div class="col lg-4">
+                <input type="text" class="form-control form-group" id="indennizzo" name="indennizzo" required>
+            </div>
+            <div class="col lg-4">
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+                <b>Descrizione dell'incidente con relative parti del veicolo danneggiate</b>
+        </div>
+        <br>
+        <div class="row form-group">
+           <textArea id="descrizione" required rows="7" cols="150"></textArea>
+        </div>
+    </div>
+
+
+    <div class="bottoni">
+        <div class="row">
+            <div class="col lg-2">
+            </div>
+            <div class="col lg-4">
+            </div>
+            <div class="col lg-4">
+                <button type="submit" class="btn btn-dark" >Invia le riparazioni eseguite</button>
+            </div>
+        </div>
+    </div>
+</form>
+<a href="../../index.html"><button class="btn btn-dark">Indietro</button></a>
+<script src="./../public/javascript/incidente.js"></script>
+</body>
+</html>

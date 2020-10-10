@@ -1,0 +1,13 @@
+.main{
+    margin-left: 3%;
+}
+input[type="checkbox"]{
+    margin-left: 1%;
+}
+.btn.btn-secondary{
+  margin-top: 1%;
+}
+hr{
+    width: 20%;
+    float:  left;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <title>Cerca un veicolo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../stylesheets/searchCar.css">
+</head>
+<body onload="logged('{{sessione}}');">
+{{>navbar}}
+    <div id="container">
+        <div class="row">
+            <div class="col-md-2 col-xl-2">
+                <form class="card sticky-top" id="searchForm">
+                    <h5 class="text-center"><br><strong>Inserisci la targa o il numero di telaio</strong><br><br></h5>
+                    <div class="form-group"><input class="form-control" type="text" id="input" autofocus
+                                                   required></div>
+                    <div class="form-group">
+                        <button class="btn btn-dark btn-block" type="submit">Cerca</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-8 col-xl-10" id="col-dx">
+                <div id="interventi">
+                    <h1 class="text-center"><strong>Elenco degli interventi eseguiti</strong></h1>
+                    <div id="veicoloInfo">
+                        <h2><strong>Veicolo</strong></h2>
+                        <h4><strong>Marca</strong></h4>
+                        <p id="marca"></p>
+                        <h4><strong>Modello</strong></h4>
+                        <p id="modello"></p>
+                        <h4><strong>Data immatricolazione</strong></h4>
+                        <p id="data_imm"></p>
+                        <h4><strong>Cilindrata</strong></h4>
+                        <p id="cilindrata"></p>
+                        <h4><strong>Cavalli</strong></h4>
+                        <p id="cavalli"></p>
+                        <h4><strong>Numero totale di proprietari</strong></h4>
+                        <p id="num_prop"></p>
+                        <h4><strong>Assicurazione valida fino al</strong></h4>
+                        <p id="data_assicurazione"></p>
+                        <h4><strong>Polizze</strong></h4>
+                        <p id="polizze"></p>
+                        <br>
+                        <button class="link" id="btnIncidenti"><h5>Verifica la presenza di incidenti</h5></button>
+                    </div>
+                    <div id="riparazioni">
+
+                    </div>
+
+                    <div id="assicurazioni">
+
+                    </div>
+                    <div id="incidenti">
+
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <script src="/javascripts/general.js"></script>
+        <script src="../javascripts/searchCar.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
+</body>
+</html>

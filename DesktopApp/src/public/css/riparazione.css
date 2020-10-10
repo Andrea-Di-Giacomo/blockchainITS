@@ -1,0 +1,24 @@
+body{
+    background-color: #eef4f7;
+}
+.navbar.navbar-expand.navbar-light.bg-custom{
+    background: #3d667a
+}
+#container{
+    margin-top: 3%;
+    color: #7d8285;
+    width: 40%;
+    padding:2%;
+    -moz-border-radius-topleft: 1%;
+    -moz-border-radius-topright: 1%;
+}
+.bottoni{
+    color: #7d8285;
+    width: 40%;
+    padding:2%;
+    -moz-border-radius-bottomleft:1%;
+    -moz-border-radius-bottomright:1%;
+}
+.riparazioni{
+    margin-top: 4%;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prova</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../stylesheets/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body onload="logged('{{sessione}}')">
+{{>navbar}}
+<div class="top">
+    <img class="sfondo" src="https://fordgoldcar.it/wp-content/uploads/2018/08/black-and-orange-ford-gt-with-doors-open-1920x760.jpg" alt="">
+    <div class="overBackground">
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="content">
+                    <h3 id="find">Controlla lo stato dei veicoli e delle loro manutenzioni<br></h3>
+                    <hr>
+                    <button type="button" class="btn btn-info">Registrati</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="info-mid">
+    <div class="row">
+        <div class="col-lg-1 col-sm-12"></div>
+        <div class="col-lg-10 col-sm-12">
+            <div class="row">
+                <div class=" box-interno col-lg-3 col-md-12 col-sm-12 col-12">
+                    <h3>Registrati</h3>
+                    <p>Grazie alle informazioni sugli interventi eseguiti, ti diremo quando andare a fare controlli ordinari</p>
+                </div>
+                <div class=" box-interno col-lg-3 col-md-12 col-sm-12 col-12">
+                    <h3>Ricerca</h3>
+                    <p>Cerca un veicolo per sapere tutti gli interventi che ha subito e conoscerne le reali condizioni</p>
+                </div>
+                <div class="box-interno col-lg-3 col-md-12 col-sm-12 col-12">
+                    <h3>Diventa parte della rete</h3>
+                    <p>Se sei un meccanico o un officina, prendi parte alla rete mantenendola e garantendo la trasparenza degli interventi sui veicoli</p>
+            </div>
+        </div>
+        <div class="col-lg-1 col-sm-12"></div>
+        </div>
+    </div>
+</div>
+
+<div id="blockchain">
+    <div class="row">
+        <div class="col-md-6">
+            <img id="blockchainImg" src="../images/Immagine.png" alt="">
+        </div>
+        <div class="col-md-6">
+            <p id="blockchainText"> Grazie alla tecnologia Blockchain, tutti gli interventi registrati nella piattaforma diventano immutabili e incorruttibili,
+                garantendo la massima trasparenza e integrità delle informazioni. La distribuzione dei dati su più nodi garantisce la loro
+                persistenza ed impossibilità di rimuovere o alterare informazioni.
+                Chiunque registrato al servizio potrà visionare lo stato di un veicolo, avendo così maggiori garanzie nelle fasi di acquisto
+                di un mezzo usato.</p>
+        </div>
+    </div>
+</div>
+<script src="/javascripts/general.js"></script>
+<script src="../javascripts/index.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

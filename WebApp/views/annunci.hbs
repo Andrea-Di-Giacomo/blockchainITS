@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <title>Cerca un veicolo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../stylesheets/annunci.css">
+</head>
+<body onload="logged('{{sessione}}');loadConfig();send_data()">
+{{>navbar}}
+    <div id="container">
+        <div class="row">
+            <div class="col-md-6 col-xl-3">
+                <form  id="searchForm">
+                    <h5 class="text-center"><br><strong>Filtri di ricerca</strong><br><br></h5>
+                    <hr>
+                    <h6>Marca</h6>
+                    <div class="form-group">
+                        <select class="form-control" id="marca" name="marca" onchange="loadModelsByMakers()">
+                            <option selected value="" disabled>Marca</option>
+                        </select>
+                    </div>
+                    <h6>Modello</h6>
+                    <div class="form-group">
+                        <select class="form-control" id="modello" name="modello">
+                            <option selected value="" disabled>Modello</option>
+                        </select>
+                    </div>
+                    <h6>Potenza(CV)</h6>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col">
+                                <input class="form-control" type="number" id="potenzaMin" placeholder="Da">
+                            </div>
+                            <div class="col">
+                                <input class="form-control" type="number" id="potenzaMax" placeholder="A">
+                            </div>
+                        </div>
+                    </div>
+                    <h6>Alimentazione</h6>
+                    <div class="form-group">
+                        <select class="form-control" id="alimentazione" name="alimentazione">
+                            <option selected value="" disabled>Alimentazione</option>
+                            <option value="benzina">Benzina</option>
+                            <option value="diesel">Diesel</option>
+                            <option value="metano">Metano</option>
+                            <option value="gpl">GPL</option>
+                            <option value="gpl">Elettrica</option>
+                        </select>
+                    </div>
+                    <h6>Provincia</h6>
+                    <div class="form-group">
+                        <select class="form-control" id="drop" onchange="mandaProvincia()">
+                            <option selected disabled>Provincia</option>
+                        </select>
+                    </div>
+                    <h6>Comune</h6>
+                    <div class="form-group">
+                        <select class="form-control" id='dropComuni' name="">
+                            <option selected disabled>Comune</option>
+                        </select>
+                    </div>
+                    <h6>Anno di immatricolazione</h6>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col">
+                                <select class="form-control" id="annoMin">
+                                    <option selected value="" disabled>Dal</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <select class="form-control" id="annoMax">
+                                    <option selected value="" disabled>Al</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <h6>Prezzo</h6>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col">
+                                <select class="form-control" id="prezzoMin">
+                                    <option selected value="" disabled>Da</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <select class="form-control" id="prezzoMax">
+                                    <option selected value="" disabled>A</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <h6>Chilometraggio</h6>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col">
+                                <select class="form-control" id="kmMin">
+                                    <option selected value="" disabled>Da</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <select class="form-control" id="kmMax">
+                                    <option selected value="" disabled>A</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="cambio">
+                            <option selected value="" disabled>Cambio</option>
+                            <option value="automatico">Automatico</option>
+                            <option value="manuale">Manuale</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-dark btn-block" type="submit">Cerca</button>
+                        <small class="form-text text-danger" id="errore">Non sono presenti veicoli sulla base dei filtri impostati</small>
+                    </div>
+                </form>
+            </div>
+            <div id="col-dx" class="col-md-6 col-xl-9">
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/javascripts/general.js"></script>
+<script src="../javascripts/annunci.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

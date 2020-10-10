@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prova</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/public/css/signup.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js">
+    </script>
+
+</head>
+<body onload="fillDropdownProvincia()">
+<div class="container">
+    <h3>Registrazione utente</h3>
+    <hr>
+    <p>Inserisci i dati per completare la registrazione e prendere parte alla rete Blockchain</p>
+    <div id="registrazione">
+        <form id="form-signup">
+            <div class="form-group">
+                <input class="form-control" type="text" id="nome" placeholder="Nome" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" id="cognome" placeholder="Cognome" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="password" id="psw" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="password" id="psw2" placeholder="Reinserici la password" required
+                       oninput="check(this)">
+            </div>
+            <div class="form-group">
+                <h5>Inserisci un documento di identità</h5>
+                <input type="file" id="documento_titolare" class="files" name="documento_titolare"
+                       onchange="readURL(this,'#documento_titolare')" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" id="nome_societa"
+                       placeholder="Nome della società che prende parte alla rete (Concessionario/Officina)" required>
+            </div>
+            <div class="form-group">
+                <h5>Inserisci un documento che attesta la proprietà della società(bolletta,bilancio parziale ecc..)</h5>
+                <input type="file" name="documento_societa" class="files" id="documento_societa"
+                       onchange="readURL(this,'#documento_societa')" required>
+            </div>
+            <div class="form-group">
+                <h5>Tipo di società</h5>
+                <div class="form-group">
+                    <input type="radio" id="tipoSocieta" name="tipoUtente" value="Concessionario" required>Concessionario
+                </div>
+                <div class="form-group">
+                    <input type="radio" id="tipoMeccanico" name="tipoUtente" value="Meccanico">Meccanico
+                </div>
+                <div class="form-group">
+                    <input type="radio" id="tipoAssicurazione" name="tipoUtente" value="Assicurazione">Assicurazione
+                </div>
+            </div>
+
+
+            <label for="drop"><b>Provincia</b></label>
+            <br>
+            <select class="dropdown form-control" id="drop" onchange="mandaProvincia()" required>
+                <option selected disabled value="">Provincia</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="dropComuni"><b>Comune</b></label>
+            <br>
+            <select class="dropdown form-control" id='dropComuni' name="" required>
+                <option selected disabled value="">Comune</option>
+            </select>
+            <br>
+            <br>
+            <button class="btn btn-secondary" type="submit">Registrati</button>
+            <br>
+        </form>
+        <div class="jumbotron" id="jumbo" style="display: none">
+            <h1 class="display-4">Registrazione completata!</h1>
+            <hr class="my-4">
+            <p>Non appena gli amministratori accetteranno la tua richiesta,ti sarà inviata una mail e potrai collegarti
+                alla rete.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" onclick="window.close()" role="button">Esci</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+</div>
+<script src="./src/public/javascript/registrazione.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

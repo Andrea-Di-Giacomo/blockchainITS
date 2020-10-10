@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Gestione Blockchain</title>
+    <link rel="stylesheet" href="../css/blockchaininfo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+<body style="background-color: rgb(207,211,248)" onload="build()">
+    <h1 class="display-4" id="titolo"></h1>
+    <h4 id="nota"></h4>
+    <h3>Comandi generici</h3>
+    <div class="row d-inline-flex">
+        <div class="col"><button class="btn btn-info dynamic" id="getParams" type="button">Parametri della Blockchain</button></div>
+        <div class="col"><button class="btn btn-info dynamic" id="getInfo" type="button">Informazioni della Blockchain</button></div>
+    </div>
+    <h3>Gestione degli addressess</h3>
+    <div class="row d-inline-flex">
+        <div class="col"><button class="btn btn-info " id="getAddresses" type="button" onclick="location.href='showMyAddresses.html'">Vedi i tuoi addresses</button></div>
+        <div class="col"><button class="btn btn-info" id="newAddress" type="button" onclick="newAddress()">Ottieni un nuovo address</button></div>
+        <div class="col"><button class="btn btn-info" id="checkAddress" type="button" onclick="location.href='checkAddress.html'">Controlla un address</button></div>
+    </div>
+    <h3>Stream</h3>
+    <div class="row d-inline-flex">
+        <div class="col"><button class="btn btn-info dynamic" id="listStream" type="button">Elenco delle stream</button></div>
+        <div class="col"><button class="btn btn-info" id="createStream" type="button" onclick="location.href='createStream.html'">Crea una stream</button></div>
+        <div class="col"><button class="btn btn-info" id="queryStream" type="button" onclick="location.href='queryStream.html'">Ricerca dati in una stream</button></div>
+    </div>
+    <h3>Permessi</h3>
+    <div class="row d-inline-flex">
+        <div class="col"><button class="btn btn-info" id="showPendingRequest" type="button" onclick="location.href='pendingRequest.html'">Richieste di partecipazione</button></div>
+        <div class="col"><button class="btn btn-info" id="grantPermissions" type="button" onclick="location.href='grantPermissions.html'">Conferisci autorizzazioni</button></div>
+        <div class="col"><button class="btn btn-info" id="showPermissions" type="button" onclick="location.href='showPermissions.html'">Visualizza le autorizzazioni dei nodi</button></div>
+        <div class="col"><button class="btn btn-info" id="removePermissions" type="button" onclick="location.href='revokePermissions.html'">Revoca autorizzazioni</button></div>
+    </div>
+    <br>
+    <button class="btn btn-secondary btn-md text-center" type="button" onclick="location.href=__dirname+'/../../index.html'">Indietro</button>
+
+
+<script src="../js/blockchainInfo.js"></script>
+</body>
+</html>

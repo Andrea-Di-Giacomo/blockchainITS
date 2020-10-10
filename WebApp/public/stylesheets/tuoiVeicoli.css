@@ -1,0 +1,27 @@
+body{
+    color: #313437;
+    background-color: #eef4f7;
+}
+.form-container{
+    margin-top: 5%;
+}
+.bg-custom{
+    background: #252525;
+    color: white;
+
+}
+.nav-link{
+    color: white;
+}
+.justify-content-end .nav-link{
+    color: #9ed0ff
+}
+.text-center{
+    margin-top: 2%;
+}
+#elencoVeicoli{
+    margin-bottom:3%;
+}
+h3{
+    margin-bottom: 2%;
+}

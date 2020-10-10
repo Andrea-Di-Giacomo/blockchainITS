@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <title>Ricerca nella stream</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700"/>
+    <link rel="stylesheet" href="../css/queryStream.css">
+</head>
+<body style="background-color: rgb(207,211,248)" onload="loadData()">
+<h1 class="display-4">Ricerca i dati all'interno di una stream</h1>
+<p>Se si vogliono inserire più chiavi di ricerca, separarle con un <b>-</b>.<br> Es: key1-key2</p>
+<div class="main">
+    <h4>Seleziona la stream</h4>
+    <div id="dropdownDiv">
+
+    </div>
+    <span id="msg" style="display: none"></span>
+    <br>
+    <button class="btn btn-secondary" type="button" onclick="queryStream()" id="crea">Cerca</button>
+
+</div>
+<br>
+<hr id="divisore">
+<br>
+<br>
+<button class="btn btn-secondary btn-md text-center" type="button"
+        onclick="location.href=__dirname+'/blockchainInfo.html'" id="indietro">Indietro
+</button>
+<script src="../js/queryStream.js"></script>
+</body>
+
+</html>

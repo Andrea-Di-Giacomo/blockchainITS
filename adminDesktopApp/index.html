@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Admin Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/src/css/index.css">
+</head>
+
+<body style="background-color: rgb(207,211,248);">
+    <h2 class="display-3 text-left">Piattaforma di gestione per Blockchain</h2>
+    <p style="margin: 2%;font-size: 22px;">Il pannello admin permette di creare una Blockchain o di gestirne una esistente</p>
+    <div class="container d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-around flex-wrap" style="margin-top: 10%;font-size: 16px;">
+        <button class="btn btn-secondary" type="button" onclick="location.href=__dirname+'/src/template/creaBlockchain.html'">
+            Crea una nuova rete Blockchain
+        </button>
+        <button class="btn btn-secondary" type="button" onclick="location.href=__dirname+'/src/template/gestisciBlockchain.html'">
+            Gestisci una Blockchain esistente
+        </button>
+    </div>
+</body>
+
+</html>

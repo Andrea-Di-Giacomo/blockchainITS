@@ -1,0 +1,11 @@
+.bg-custom{
+    background: #252525;
+    color: white;
+
+}
+.nav-link{
+    color: white;
+}
+.justify-content-end .nav-link{
+    color: #9ed0ff
+}

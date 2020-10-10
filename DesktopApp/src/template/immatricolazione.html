@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Riparazione</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../public/css/immatricolazione.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body onload="loadMarche()">
+<h1>Inserisci i dettagli dell'immatricolazione</h1>
+<form action="#" id="immatricolazioneForm">
+    <div id="container">
+        <div class="form-group">
+                <input class="form-control" type="text" id="targa" name="targa" placeholder="Targa" required minlength="7" maxlength="7">
+        </div>
+        <div class="form-group">
+                <input class="form-control" type="text" id="telaio" name="telaio" placeholder="Numero di telaio" required>
+        </div>
+        <div class="form-group">
+                <input class="form-control" type="text" id="proprietario" placeholder="Proprietario" name="proprietario" required>
+        </div>
+        <div class="form-group">
+                <select class="form-control" id="marca" name="marca" required onchange="loadModelsByMakers()">
+                    <option selected value="" disabled>Marca</option>
+                </select>
+        </div>
+        <div class="form-group">
+                <select class="form-control" id="modello" name="modello" required >
+                    <option selected value="" disabled>Modello</option>
+                </select>
+        </div>
+        <div class="form-group">
+                <input class="form-control" type="text" id="cilindrata" name="cilindrata" placeholder="Cilindrata" required>
+        </div>
+        <div class="form-group">
+                <input class="form-control" type="text" id="cavalli" name="cavalli" placeholder="Cavalli" required>
+            </div>
+
+<button type="submit" class="btn btn-dark form-control" >Invia</button>
+        </div>
+</form>
+<a href="../../index.html"><button class="btn btn-dark">Indietro</button></a>
+<script src="./../public/javascript/immatricolazioni.js"></script>
+</body>
+</html>

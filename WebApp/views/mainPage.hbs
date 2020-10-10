@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Main Page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../stylesheets/mainPage.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheets/Features-Boxed.css" />
+    <link rel="stylesheet" href="../stylesheets/Projects-Horizontal.css" />
+</head>
+<body onload="logged('{{sessione}}')">
+{{>navbar}}
+<div class="top">
+    <div class="features-boxed">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Features</h2>
+            </div>
+            <div class="row justify-content-center features">
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fas fa-car-alt icon"></i>
+                        <h3 class="name">Aggiungi veicolo</h3>
+                        <p class="description">Inserisci le informazioni del tuo veicolo per ottenere dei reminder su
+                            quando eseguire le riparazioni</p><a class="learn-more" href="/car">Learn more »</a></div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-user icon"></i>
+                        <h3 class="name">Profilo</h3>
+                        <p class="description">Modifica le impostazioni del tuo profilo<br/><br/><br/></p><a
+                                class="learn-more" href="/users/profile">Learn more »</a></div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="far fa-money-bill-alt icon"></i>
+                        <h3 class="name">Annunci</h3>
+                        <p class="description">Guarda gli annunci dei mezzi presenti, vedendo se hanno effettuato delle
+                            riparazioni certificate</p><a class="learn-more" href="/annunci">Learn more »</a></div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-search icon"></i>
+                        <h3 class="name">Cerca veicoli</h3>
+                        <p class="description">Ricerca veicoli per verificarne le riparazioni eseguite</p><a
+                                class="learn-more" href="/car/search">Learn more »</a></div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-plus icon"></i>
+                        <h3 class="name">Inserisci un annuncio</h3>
+                        <p class="description">Inserisci un annuncio di vendita della tua auto<br/></p><a
+                                class="learn-more" href="/car/annuncio">Learn more »</a></div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fas fa-car-side icon"></i>
+                        <h3 class="name">I miei veicoli</h3>
+                        <p class="description">Vedi i tuoi veicoli registrati ed i tuoi annunci di vendita<br/></p><a class="learn-more" href="users/vehicles">Learn
+                            more »</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/javascripts/general.js"></script>
+<script src="../javascripts/mainPage.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

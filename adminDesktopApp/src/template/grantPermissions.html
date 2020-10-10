@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <title>Fornisci nuove autorizzazioni</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700"/>
+    <link rel="stylesheet" href="../css/grantPermissions.css">
+</head>
+<body style="background-color: rgb(207,211,248)">
+<h1 class="display-4">Fornisci nuove autorizzazioni a un nodo inserendo l'address</h1>
+<div class="main">
+    <h4>Inserisci l'address</h4>
+    <input type="text" placeholder="address" id="input" onkeyup="checkPermissions()">
+    <span id="msg" style="display: none"></span>
+    <br>
+    <div class="checkBoxes">
+
+    </div>
+    <button class="btn btn-secondary" type="button" id="grant" onclick="grantPermissions();">Conferisci permessi</button>
+    </form>
+</div>
+<br>
+<hr id="divisore">
+<br>
+<br>
+<button class="btn btn-secondary btn-md text-center" type="button"
+        onclick="location.href=__dirname+'/blockchainInfo.html'" id="indietro">Indietro
+</button>
+<script src="../js/grantPermissions.js"></script>
+</body>
+
+</html>

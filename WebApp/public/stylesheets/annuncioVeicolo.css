@@ -1,0 +1,58 @@
+#carouselExampleIndicators{
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 9px;
+
+}
+body{
+    color: #313437;
+    background-color: #eef4f7;
+}
+.form-container{
+    margin-top: 5%;
+}
+.bg-custom{
+    background: #252525;
+    color: white;
+
+}
+.nav-link{
+    color: white;
+}
+.justify-content-end .nav-link{
+    color: #9ed0ff
+}
+.text-center{
+    margin-top: 2%;
+}
+#col-dx{
+    display: none;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+#veicoloInfo{
+    margin-top: 4%;
+}
+#container{
+    margin:1%
+}
+
+.intervento{
+    margin-top: 8%;
+}
+.sticky-top{
+    background-color: #eef4f7;
+    border:0;
+}
+#errore{
+    display: none;
+}
+
+.row{
+    margin-top: 2%;
+}
+.jumbotron{
+    display: none;
+}

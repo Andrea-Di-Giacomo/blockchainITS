@@ -1,0 +1,53 @@
+body{
+    color: #313437;
+    background-color: #eef4f7;
+}
+.form-container{
+    margin-top: 5%;
+}
+.bg-custom{
+    background: #252525;
+    color: white;
+
+}
+.nav-link{
+    color: white;
+}
+.justify-content-end .nav-link{
+    color: #9ed0ff
+}
+.text-center{
+    margin-top: 2%;
+}
+#col-dx{
+    padding-left: 8%;
+    padding-right: 8%;
+}
+#veicoloInfo{
+    margin-top: 4%;
+}
+#container{
+    margin:1%
+}
+#interventi{
+    margin-top:2%;
+    display:none
+}
+
+table.table-bordered.table-bordered > thead > tr > th{
+    border:1px solid black;
+}
+table.table-bordered >tbody> tr > td{
+    border:1px solid black;
+}
+.intervento{
+    margin-top: 8%;
+}
+.sticky-top{
+    background-color: #eef4f7;
+    border:0;
+}
+.link{
+    background:none;border:none;
+    color: #4b47ff;
+}

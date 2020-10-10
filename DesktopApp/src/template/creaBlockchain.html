@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crea Blockchain</title>
+    <script src="../js/creaBlockchain_p.js"></script>
+</head>
+<body>
+<form id="test" onsubmit="exec()">
+    <h1>Inserisci i parametri per personalizzare, in base alle tue esigenze, la Blockchain</h1>
+    <h2>Parametri generali</h2>
+    <h3>Inserisci il nome della Blockchain</h3>
+    <input id="nome_BC" type="text" placeholder="Nome" required>
+    <h3>Inserisci una descrizione della tua Blockchain (facoltativo)</h3>
+    <input id="descrizione" type="text" placeholder="Descrizione">
+    <h3>Tempo che intercorre tra la creazione di due blocchi (default 15 secondi)</h3>
+    <input type="text" value=15 id="tempo_blocchi" required>
+    <h3>Massima dimensione(in byte) dei blocchi (default 8388608 Bytes = 8MB)</h3>
+    <input type="text" value=8388608 id="dimensione_blocchi" required>
+    <h2>Permessi (Di default sono tutte impostate su No)</h2>
+    <h3>Chiunque può connettersi?</h3>
+    <input type="radio" name="permessi_connessione" value="true" required>Si<br>
+    <input type="radio" name="permessi_connessione" value="false" checked>No<br>
+    <h3>Chiunque può inviare transazioni?</h3>
+    <input type="radio" name="permessi_invio" value="true" required>Si<br>
+    <input type="radio" name="permessi_invio" value="false" checked>No<br>
+    <h3>Chiunque può ricevere transazioni?</h3>
+    <input type="radio" name="permessi_ricezione" value="true" required>Si<br>
+    <input type="radio" name="permessi_ricezione" value="false" checked>No<br>
+    <h3>Chiunque può creare streams?</h3>
+    <input type="radio" name="permessi_stream" value="true" required>Si<br>
+    <input type="radio" name="permessi_stream" value="false" checked>No<br>
+    <h3>Chiunque può creare nuovi assets?</h3>
+    <input type="radio" name="permessi_asset" value="true" required>Si<br>
+    <input type="radio" name="permessi_asset" value="false" checked>No<br>
+    <h3>Chiunque può partecipare al processo di mining?</h3>
+    <input type="radio" name="permessi_mining" value="true" required>Si<br>
+    <input type="radio" name="permessi_mining" value="false" checked>No<br>
+    <input type="submit">
+</form>
+</body>
+</html>
